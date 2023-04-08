@@ -1,1 +1,151 @@
-Hello World
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Rami Ashtar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script>
+			(function() {
+				emailjs.init('user_DuZ5hhOnpGc19exjsijV4');
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					// these IDs from the previous steps
+					emailjs.sendForm('service_2ofpvxl','template_m38943d', this)
+						.then(function() {
+							console.log('SUCCESS!');
+						}, function(error) {
+							console.log('FAILED...', error);
+						});
+				});
+			}
+		</script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TWS8DF0YBH"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-TWS8DF0YBH');
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#two">Demos</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Rami Ashtar</h1>
+							<p>Software Engineer, Web Developer & Designer</p>
+						</div>
+					</section>
+
+				
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-gem"></span>
+									<h3>Photo Albums</h3>
+									<p>React application to display a list of albums and pictures inside them, allowing the user to perform a real-time search on picture titles. Demo <a href="./photo-albums" >here</a>.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Todo List</h3>
+									<p>React application for adding, deleting, editing and displaying a list of todo items. Demo coming soon.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Personal Website</h3>
+									<p>My personal website, created using vanilla javascript and HTML. Demo <a href="https://www.ramiashtar.com/">here</a>.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>And more...</h3>
+									<p>Additional demos will be added for my iOS apps and previous projects.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>If you would like to collaborate on a project together, or have any inquiries, do not hesitate to contact me using the information below.</p>
+							<div class="">
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											Based in Toronto, ON<br />
+											Canada</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">contact@ramiashtar.com</a>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://www.twitter.com/ramiashtar" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.github.com/rashtar" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/rashtar/" target="_blank"_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+										<li>
+											<h3>Resume</h3>
+											<a href="./assets/files/resume.pdf" class="button">Download <i class="icon fa-solid fa-file"></i></a>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; RamiAshtar.com All rights reserved.</li>
+						<li><a href="https://storyset.com/business">Business illustrations by Storyset</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
